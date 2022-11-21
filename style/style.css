@@ -15,7 +15,7 @@ body {
     background: whitesmoke;
 }
 
-.name {
+.title {
     margin-top: 75px;
     margin-left: 125px;
     margin-bottom: 25px;
@@ -23,7 +23,16 @@ body {
     font-weight: bold;
 }
 
-.summary {
+.summary-left {
     margin-left: 128px;
     font-size: 18px;
+}
+
+.summary-right {
+    margin-right: 128px;
+    font-size: 18px;
+}
+
+.text-right {
+    text-align: right;
 }
