@@ -16,3 +16,7 @@
 .navbar-logo {
     height: 72px;
 }
+
+.navbar-right {
+    text-align: right;
+}
