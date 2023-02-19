@@ -1,14 +1,13 @@
 @font-face {
-    font-family: "Ida Narrow";
-    src: url(/Ida-Narrow.ttf);
-    src: local(Ida Narrow);
-}
+    font-family: Ida;
+    src: url('Ida-Narrow.ttf') format('ttf');
+}  
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hiddem;
+    overflow: hidden;
 }
 
 .title {
