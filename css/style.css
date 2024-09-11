@@ -3,11 +3,23 @@
     src: url('Ida-Narrow.ttf') format('ttf');
 }  
 
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    height: 100vh;
     overflow: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .title {
@@ -32,7 +44,7 @@
     text-align: right;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .title {
         margin-top: 15px;
         margin-left: 15px;
@@ -58,4 +70,4 @@
         margin-left: 52px;
         font-size: 16px;
     }
-}
+} */
