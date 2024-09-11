@@ -1,13 +1,8 @@
-@font-face {
-    font-family: Ida;
-    src: url('Ida-Narrow.ttf') format('ttf');
-}  
-
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #2b2d42;
-    color: #edf2f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     height: 100vh;
     overflow: hidden;
     scroll-snap-type: y mandatory;
@@ -22,27 +17,39 @@ body, html {
     overflow-y: scroll;
 }
 
-.title {
-    margin-top: 75px;
-    margin-left: 125px;
-    margin-bottom: 25px;
-    font-size: 64px;
-    font-weight: bold;
+.display-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2b2d42;
+    scroll-snap-align: start; 
 }
 
-.summary-left {
-    margin-left: 128px;
-    font-size: 18px;
+.display-section:nth-child(even) {
+    background-color: #8D99AE;
+    color: black;
 }
 
-.summary-right {
-    margin-right: 128px;
-    font-size: 18px;
+/* .content {
+    text-align: center;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s, opacity 1s;
 }
 
-.text-right {
-    text-align: right;
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
+
+.content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #aaa;
+} */
 
 /* @media screen and (max-width: 600px) {
     .title {
