@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
 
     // Animasi untuk section-2: dari bawah ke atas
-    gsap.fromTo("#section2 .content", 
+    gsap.fromTo("#section2 .content-left", 
         { x: -100, opacity: 0 },  // Mulai dari di luar layar di bagian bawah
         { 
             x: 0, opacity: 1,  // Masuk ke posisi semula
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     // Animasi untuk section-3: dari atas ke bawah
-    gsap.fromTo("#section3 .content", 
+    gsap.fromTo("#section3 .logo-container", 
         { y: -100, opacity: 0 },  // Mulai dari di luar layar di bagian atas
         { 
             y: 0, opacity: 1,  // Masuk ke posisi semula
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     // Animasi untuk section-4: dari kiri ke kanan
-    gsap.fromTo("#section4 .content", 
+    gsap.fromTo("#section4 .card-container", 
         { x: -100, opacity: 0 },  // Mulai dari di luar layar di sebelah kiri
         { 
             x: 0, opacity: 1,  // Masuk ke posisi semula
