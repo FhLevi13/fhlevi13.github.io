@@ -36,6 +36,20 @@ body, html {
     z-index: 99;
 }
 
+.logo-container {
+    overflow: hidden;
+}
+
+.logo-scroll {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.logo-scroll img {
+    height: 6rem;
+}
+
 .title-right-bottom {
     position: absolute;
     bottom: 20px;
@@ -89,4 +103,13 @@ content-left {
 #section5 {
     background-color: #212529;
     height: 30vh;
+}
+
+@keyframes infinite-scroll {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
