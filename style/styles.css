@@ -147,3 +147,55 @@ content-left {
         transform: translateX(-100%);
     }
 }
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 70px; /* Ukuran logo lebih kecil di mobile */
+    }
+
+    .title-right-bottom {
+        width: 80px; /* Ukuran title-right-bottom lebih kecil di mobile */
+    }
+
+    .logo-scroll img {
+        height: 4rem; /* Ukuran logo di dalam scroll lebih kecil di mobile */
+    }
+
+    /* Adjust for smaller screen sizes */
+    .display-section {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 60px; /* Ukuran logo lebih kecil di mobile */
+    }
+
+    .title-right-bottom {
+        width: 70px; /* Ukuran title-right-bottom lebih kecil di mobile */
+    }
+
+    .logo-scroll img {
+        height: 3rem; /* Ukuran logo di dalam scroll lebih kecil di mobile */
+    }
+}

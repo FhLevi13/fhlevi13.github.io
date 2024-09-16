@@ -61,3 +61,35 @@
     font-size: 14px;
     padding: 1rem;
 }
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 80%; /* Lebar kartu lebih kecil di tablet */
+        height: auto;
+    }
+
+    .card-container {
+        gap: 1rem; /* Jarak antar kartu lebih kecil di tablet */
+        flex-wrap: wrap;
+    }
+
+    .card-description {
+        font-size: 0.875rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%; /* Kartu memenuhi lebar layar di mobile */
+        height: auto;
+    }
+
+    .card-description {
+        font-size: 0.75rem; /* Ukuran teks lebih kecil di mobile */
+    }
+
+    .card-container {
+        gap: 0.5rem; /* Jarak antar kartu lebih kecil di mobile */
+    }
+}
