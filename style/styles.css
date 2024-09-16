@@ -25,7 +25,6 @@ body, html {
     position: relative;
     scroll-snap-align: start; 
     overflow: hidden;
-    text-align: center;
 }
 
 .logo {
@@ -34,14 +33,21 @@ body, html {
     left: 50px;
     width: 100px;
     height: auto;
+    z-index: 99;
 }
 
-.overlay-text {
+.title-right-bottom {
     position: absolute;
-    top: 20px;
-    left: 50px;
+    bottom: 20px;
+    right: 20px;
     width: 100px;
     height: auto;
+    z-index: 99;
+}
+
+content-left {
+    text-align: left;
+    opacity: 1;
 }
 
 .content {
@@ -55,6 +61,11 @@ body, html {
 }
 
 .content p {
+    font-size: 1.25rem;
+    max-width: 800px;
+}
+
+.content-left p {
     font-size: 1.25rem;
     max-width: 800px;
 }
@@ -73,5 +84,9 @@ body, html {
 
 #section4 {
     background-color: #495057;
+}
+
+#section5 {
+    background-color: #212529;
     height: 30vh;
 }
