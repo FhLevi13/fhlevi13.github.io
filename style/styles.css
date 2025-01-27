@@ -41,7 +41,17 @@ body, html {
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 80%;
+}
+
+.logo-socmed {
+    display: flex;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.logo-invert {
+    filter: invert();
 }
 
 .logo-scroll {
@@ -57,13 +67,14 @@ body, html {
     object-fit: contain;
 }
 
-.title-right-bottom {
+.title-top {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    top: 20px;
+    left: 20px;
     width: 100px;
     height: auto;
     z-index: 99;
+    rotate: -180deg;
 }
 
 content-left {
