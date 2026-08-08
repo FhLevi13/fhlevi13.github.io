@@ -1,102 +1,134 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FhLevi</title>
-    <link rel="stylesheet" href="/style/styles.css">
-    <link rel="stylesheet" href="/style/card-style.css">
-    <link rel="icon" href="/img/fhlevi-icon.webp">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
-<>
-    <section class="section display-section" id="section1">
-        <img src="/img/fhlevi.webp" alt="logo" class="logo">
-        <div class="content">
-            <h2>I'm Muhammad Alif Fahlevhi</h2>
-            <p>Informatics Graduate (S.Kom) | BNSP-Certified Web Developer | Android Developer | UI/UX & Graphic Design.</p>
-        </div>
-    </section>
-
-    <section class="section display-section" id="section2">
-        <img src="/img/profile.webp" alt="title" class="title-top">
-        <div class="content-left">
-            <p>Bachelor of Informatics (S.Kom) and a BNSP-Certified Web Developer & ICT Project Manager.
-                I am passionate about building functional, high-quality digital solutions and managing tech projects efficiently. 
-                My hands-on experience includes developing an Android-based mobile application during an IT internship at PT KAI (Persero) using Java and Firebase, 
-                combined with extensive experience leading multimedia divisions for prominent student organizations. 
-                Holding a national competency certification reflects my dedication to professional excellence, strong structural thinking, 
-                and readiness to bring immediate value to engineering and project teams.</p>
-        </div>
-    </section>
-
-    <section class="section display-section" id="section3">
-        <img src="/img/skills.webp" alt="title" class="title-top">
-        <div class="logo-container">
-            <div class="logo-scroll">
-                <img src="https://logodix.com/logo/374748.png" alt="html-js-css">
-                <img src="https://logospng.org/download/laravel/logo-laravel-icon-1024.png" alt="laravel">
-                <img src="https://logopng.com.br/logos/android-3.png" alt="android">
-                <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo-1080x675.png" alt="java">
-                <img src="https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo-0.png" alt="photoshop">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PortofolioKu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Tambahkan atribut data-target untuk JS -->
+                    <li class="nav-item"><a class="nav-link active" href="#" data-target="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="experience">Experience</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="section display-section" id="section4">
-        <img src="/img/project.webp" alt="title" class="title-top">
-        <div class="card-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/img/project-img/ibu-kota-negara-asean.jpg" alt="Card Image">
-                    <div class="card-overlay">
-                        <h3 class="card-title">Ibu Kota Negara Asean</h3>
-                        <p class="card-description">Ibu Kota Negara Asean is the final project of the Mobile Application Programming 1 course.<br>
-                            This application serves to view a list of capitals from ASEAN countries.<br>
-                            This application can also see detailed info from the capital city of the country starting from the name of the capital, the origin of the country,
-                            the area and can also see the location of the capital city of the country.</p>
-                        <a href="https://github.com/FhLevi13/IbuKotaNegara" target="_blank" class="btn">Github Project</a>
+    <!-- Konten Utama (Tidak bisa di-scroll) -->
+    <main id="content-area" class="container">
+
+        <!-- 1. HOME PAGE -->
+        <section id="home" class="page-section active">
+            <div class="text-center content-box">
+                <h1 class="display-4 fw-bold">Halo, Saya seorang Software Developer</h1>
+                <p class="lead text-muted mt-3">Mahasiswa S1 Informatika yang berfokus pada pengembangan perangkat lunak, pemrograman berorientasi objek, dan machine learning.</p>
+            </div>
+        </section>
+
+        <!-- 2. PROFILE PAGE -->
+        <section id="profile" class="page-section">
+            <div class="row align-items-center content-box justify-content-center text-center text-md-start">
+                <div class="col-md-4">
+                    <!-- Ganti dengan foto aslimu -->
+                    <div class="bg-secondary rounded-circle mx-auto" style="width: 200px; height: 200px;"></div>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2>Tentang Saya</h2>
+                    <p>Saya adalah mahasiswa S1 Informatika tingkat akhir yang memiliki ketertarikan mendalam pada pengembangan sistem dan logika pemrograman.</p>
+                    <p>Aktif mengeksplorasi teknologi baru mulai dari jaringan saraf tiruan (AI) hingga mekanik dasar pengembangan game 2D.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS PAGE -->
+        <section id="skills" class="page-section">
+            <div class="row justify-content-center content-box">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Keahlian</h2>
+                    
+                    <div class="mb-3">
+                        <label class="fw-bold">HTML, CSS, JavaScript, Bootstrap</label>
+                        <div class="progress"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold">Python & Machine Learning</label>
+                        <div class="progress"><div class="progress-bar bg-success" style="width: 80%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold">C# & Game Development</label>
+                        <div class="progress"><div class="progress-bar bg-info" style="width: 75%"></div></div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="/img/project-img/cination.jpg" alt="Card Image">
-                    <div class="card-overlay">
-                        <h3 class="card-title">Cination (City and Nation)</h3>
-                        <p class="card-description">City and Nation is the final project of the Mobile Application Programming 2 course.<br>
-                            This application is API-based, which contains Login, Register & CRUD Data.<br>
-                            This application serves to input the name of the country & its capital.</p>
-                        <a href="https://github.com/Rizky2125250079/Cination" target="_blank" class="btn">Github Project</a>
+        </section>
+
+        <!-- 4. PROJECT PAGE -->
+        <section id="project" class="page-section">
+            <div class="content-box">
+                <h2 class="text-center mb-4">Proyek Portofolio</h2>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Klasifikasi Sampah (CNN)</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Python, PyTorch</h6>
+                                <p class="card-text small">Model klasifikasi citra sampah ke dalam 9 kelas menggunakan arsitektur ShuffleNetV2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">2D Action RPG</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">C#, Unity Engine</h6>
+                                <p class="card-text small">Game 2D berfokus pada mekanik pergerakan, sistem collision, dan interaksi aksi (sword).</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="card">
-                <div class="card-image">
-                    <img src="https://via.placeholder.com/300" alt="Card Image">
-                    <div class="card-overlay">
-                        <h3 class="card-title">Card Title</h3>
-                        <p class="card-description">This is a description for the card.</p>
-                        <a href="https://github.com/FhLevi13" target="_blank" class="btn">Github Project</a>
+        </section>
+
+        <!-- 5. EXPERIENCE PAGE -->
+        <section id="experience" class="page-section">
+            <div class="row justify-content-center content-box">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Pengalaman</h2>
+                    
+                    <div class="card mb-3 border-start border-primary border-5 shadow-sm">
+                        <div class="card-body py-2">
+                            <h5 class="fw-bold mb-1">Peneliti Tugas Akhir</h5>
+                            <h6 class="text-primary small">Informatika | Okt 2025 - Jan 2026</h6>
+                            <p class="mt-2 mb-0 small">Melakukan komputasi model jaringan saraf tiruan dan menyusun publikasi jurnal ilmiah OJS.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-start border-primary border-5 shadow-sm">
+                        <div class="card-body py-2">
+                            <h5 class="fw-bold mb-1">TikTok Affiliate Creator</h5>
+                            <h6 class="text-primary small">Independen | Des 2025 - Sekarang</h6>
+                            <p class="mt-2 mb-0 small">Mengelola pusat afiliasi platform untuk pemasaran produk dan manajemen product listing.</p>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-        </div>
-    </section>
-
-    <section class="section display-section" id="section5">
-        <div class="content">
-            <h2>Follow Me</h2>
-            <div class="logo-container">
-                <a href="http://instagram.com/fhlevi13"><img class="logo-socmed" src="https://4.bp.blogspot.com/-NS_uLd2UdEI/WrSyI1AWC_I/AAAAAAAAKfI/McgqxTCkSg8eMz7vjmw8I-zrIupIPDWdwCLcBGAs/s1600/Instagram.png" alt="instagram"></a>
-                <a href="https://github.com/FhLevi13"><img class="logo-socmed logo-invert" src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/muhammad-alif-fahlevhi/"><img class="logo-socmed logo-invert" src="/img/LI-In-Bug.png" alt="linkedin"></a>
             </div>
-        </div>
-    </section>
-
-    <script src="/script/script.js"></script>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
