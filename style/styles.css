@@ -93,3 +93,22 @@ body {
     position: relative;
     z-index: 2;
 }
+
+/* Styling ikon skill agar responsif */
+.skill-icon {
+    max-height: 80px; /* Ukuran maksimal di layar laptop/desktop */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Efek membesar sedikit saat kursor diarahkan */
+}
+
+/* Penyesuaian ukuran otomatis untuk layar HP */
+@media (max-width: 576px) {
+    .skill-icon {
+        max-height: 50px; /* Ukuran otomatis mengecil di HP */
+    }
+}
