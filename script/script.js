@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             navLinks.forEach(link => {
                 link.addEventListener("click", function(e) {
-                    e.preventDefault(); // Mencegah reload halaman
+                    e.preventDefault();
 
                     // 1. Hapus class 'active' dari semua menu navbar
                     navLinks.forEach(nav => nav.classList.remove("active"));
