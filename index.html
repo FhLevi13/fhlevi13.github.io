@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Alif Fahlevhi - Portfolio</title>
+    <script src="/style/styles.css"></script>
+    <script src="/script/script.js"></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -12,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
     <script>
         tailwind.config = {
             theme: {
@@ -34,22 +35,6 @@
             }
         }
     </script>
-    <style>
-        /* Custom scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e3a8a; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #1e40af; 
-        }
-    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-navy-900 selection:text-white">
 
@@ -263,40 +248,5 @@
             </div>
         </div>
     </footer>
-
-    <!-- Interactive Scripts -->
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Navbar Mobile Toggle Logic
-        const toggleBtn = document.getElementById('navbar-toggle');
-        const navbarMenu = document.getElementById('navbar-sticky');
-        
-        toggleBtn.addEventListener('click', () => {
-            navbarMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        const navLinks = navbarMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if(!navbarMenu.classList.contains('hidden')) {
-                    navbarMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Simulate form submission without alert()
-        function showMessage() {
-            const msgBox = document.getElementById('form-message');
-            msgBox.classList.remove('hidden');
-            // Hide after 3 seconds
-            setTimeout(() => {
-                msgBox.classList.add('hidden');
-                document.querySelector('form').reset();
-            }, 3000);
-        }
-    </script>
 </body>
 </html>

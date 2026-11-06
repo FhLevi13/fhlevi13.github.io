@@ -1,29 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
-            // Tangkap semua menu navbar dan semua halaman
-            const navLinks = document.querySelectorAll(".nav-link");
-            const pages = document.querySelectorAll(".page-section");
+// Set current year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
 
-            navLinks.forEach(link => {
-                link.addEventListener("click", function(e) {
-                    e.preventDefault();
+// Navbar Mobile Toggle Logic
+const toggleBtn = document.getElementById('navbar-toggle');
+const navbarMenu = document.getElementById('navbar-sticky');
 
-                    // 1. Hapus class 'active' dari semua menu navbar
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-                    
-                    // 2. Tambahkan class 'active' ke menu yang diklik
-                    this.classList.add("active");
+toggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('hidden');
+});
 
-                    // 3. Ambil id target dari data-target
-                    const targetId = this.getAttribute("data-target");
-
-                    // 4. Sembunyikan semua halaman, lalu tampilkan halaman yang dipilih
-                    pages.forEach(page => {
-                        if (page.id === targetId) {
-                            page.classList.add("active");
-                        } else {
-                            page.classList.remove("active");
-                        }
-                    });
-                });
-            });
-        });
+// Close mobile menu when clicking a link
+const navLinks = navbarMenu.querySelectorAll('a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if(!navbarMenu.classList.contains('hidden')) {
+            navbarMenu.classList.add('hidden');
+        }
+    });
+});
